@@ -70,5 +70,8 @@ ifeq ($(WITH_TWRP),true)
 TARGET_RECOVERY_DEVICE_DIRS += device/oneplus/bacon/twrp
 endif
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Inherit from the proprietary version
 include vendor/oneplus/bacon/BoardConfigVendor.mk
