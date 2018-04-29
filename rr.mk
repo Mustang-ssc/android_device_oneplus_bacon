@@ -20,7 +20,6 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
->>>>>>> 33df96d... bacon: Cleanup lineage.mk:lineage.mk
 
 PRODUCT_NAME := rr_bacon
 PRODUCT_DEVICE := bacon
