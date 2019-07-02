@@ -22,6 +22,10 @@ on fs
     # Start HW service manager early
     start hwservicemanager
 
+    # Smart charging power supply access
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 on late-fs
     # Start services for Boot Animation
     start hwservicemanager
